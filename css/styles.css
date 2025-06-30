@@ -10143,14 +10143,27 @@ section.resume-section .resume-section-content {
   }
 }
 .li-icon{
-	width: 30px;
-	height: 30px;
+	width: 58px;
+	height: 40px;
 	padding: 0px;
-	margin: 0px;
-	margin-left: 2px;
+	margin: 20px 10px 0px 0px;
 }
 .p-top-line {
 	font-size:15px;
-	border-top: 1px solid #3d3d3d;
+	border-top: 1px solid #6c757d;
 	padding-top: 3px;
+}
+.swiper {
+  width: 100%;
+  max-width: 711px;  /* 원하는 너비 */
+  height: 400px;     /* 슬라이드 높이 */
+  margin: 10px 0px 20px 0px;
+  background-color: #f5f5f5;  /* 여백이 생길 수 있어서 배경색 지정해주는 것도 좋음 */
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;   /* 💡 이미지 전체 보이게 */
+  object-position: center; /* 중앙 정렬 */
 }
