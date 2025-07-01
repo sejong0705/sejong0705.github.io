@@ -10177,9 +10177,9 @@ section.resume-section .resume-section-content {
   line-height: 1.6;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
-.problem-box strong {
+.strong {
   font-weight: 700;
-  color: #343a40;
+  color: #23272b;
 }
 
 .problem-box li {
@@ -10190,3 +10190,6 @@ section.resume-section .resume-section-content {
   margin-bottom: 0.5rem;
 }
 
+.problem-section {
+  margin-left: 25px;
+}
