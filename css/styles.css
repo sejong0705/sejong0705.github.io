@@ -10168,3 +10168,25 @@ section.resume-section .resume-section-content {
   object-fit: contain;   /* 💡 이미지 전체 보이게 */
   object-position: center; /* 중앙 정렬 */
 }
+.problem-box {
+  /* background-color: #f8f9fa; */
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.problem-box strong {
+  font-weight: 700;
+  color: #343a40;
+}
+
+.problem-box li {
+  margin-bottom: 0.5rem;
+}
+
+.highlight-code-list li {
+  margin-bottom: 0.5rem;
+}
+
