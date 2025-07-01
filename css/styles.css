@@ -10193,3 +10193,8 @@ section.resume-section .resume-section-content {
 .problem-section {
   margin-left: 25px;
 }
+.responsibility-column {
+  flex: 1 1 45%;
+  min-width: 280px;
+  margin-left: 20px;
+}

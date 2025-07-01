@@ -253,38 +253,49 @@
                 날씨 및 사용자 프로필 정보를 기반으로 현실적이고 개인화된 코디를 추천해주는 플랫폼입니다.<br><br>
                 <div>
                     <p><i class="fas fa-check"></i> 담당 부분</p>
-                    피드 업로드 및 관리
-                    <ul>
-                        <li>멀티 이미지 업로드 및 파일저장(MultipartFile)</li>
-                        <li>설명, 해시태그, 제품 정보와 함께 등록</li>
-                        <li>수정 시 기존 데이터와 비교하여 중복/불필요한 삭제 방지</li>
-                        <li>이미지 수정은 불가능하도록 제한 (추천 이미지 보존 목적)</li>
-                    </ul>
-                    좋아요 기능
-                    <ul>
-                        <li>유저가 피드에 좋아요를 토글 방식으로 남길 수 있도록 구현</li>
-                        <li>좋아요 수를 기준으로 인기 게시물 TOP 4 노출 (Pageable 기반 정렬)</li>
-                    </ul>
-                    북마크 기능
-                    <ul>
-                        <li>피드 개별 저장 및 여러 피드 일괄 저장/삭제 기능 지원</li>
-                        <li>북마크 탭에서 저장한 피드를 한눈에 확인 가능</li>
-                    </ul>
-                    댓글 및 대댓글 기능
-                    <ul>
-                        <li>게시글 별 댓글 작성 및 @nickname 대댓글 구조</li>
-                        <li>자신이 작성한 댓글 삭제 가능</li>
-                    </ul>
-                    통합 검색 엔진 구현
-                    <ul>
-                        <li>@닉네임, #태그명, 일반 텍스트 검색을 모두 지원</li>
-                        <li>해당 검색어와 관련된 유저, 게시물, 해시태그를 통합 검색</li>
-                    </ul>
-                    팔로우 시스템
-                    <ul>
-                        <li>유저 간 팔로우/언팔로우 구현</li>
-                        <li>내가 팔로우한 유저(팔로잉), 나를 팔로우하는 유저(팔로워) 목록 제공</li>
-                    </ul>
+                    <div class="problem-box" style="display: flex; flex-wrap: wrap; gap: 2rem;">
+                        <div class="responsibility-column">
+                            <h6>🖼️ 피드 업로드 및 관리</h6>
+                            <ul>
+                                <li>멀티 이미지 업로드 및 파일 저장 (MultipartFile)</li>
+                                <li>설명, 해시태그, 제품 정보와 함께 등록</li>
+                                <li>수정 시 기존 데이터와 비교하여 중복/불필요한 삭제 방지</li>
+                                <li>이미지 수정은 불가능하도록 제한 (추천 이미지 보존 목적)</li>
+                            </ul>
+
+                            <h6>❤️ 좋아요 기능</h6>
+                            <ul>
+                                <li>유저가 피드에 좋아요를 토글 방식으로 남길 수 있도록 구현</li>
+                                <li>좋아요 수 기준 인기 게시물 TOP 4 노출 (Pageable 기반 정렬)</li>
+                            </ul>
+
+                            <h6>🔖 북마크 기능</h6>
+                            <ul>
+                                <li>피드 개별 저장 및 여러 피드 일괄 저장/삭제 기능 지원</li>
+                                <li>북마크 탭에서 저장한 피드를 한눈에 확인 가능</li>
+                            </ul>
+                        </div>
+
+                        <div class="responsibility-column">
+                            <h6>💬 댓글 및 대댓글 기능</h6>
+                            <ul>
+                                <li>게시글 별 댓글 작성 및 @nickname 대댓글 구조</li>
+                                <li>자신이 작성한 댓글 삭제 가능</li>
+                            </ul>
+
+                            <h6>🔎 통합 검색 엔진</h6>
+                            <ul>
+                                <li>@닉네임, #태그명, 일반 텍스트 검색을 모두 지원</li>
+                                <li>관련 유저, 게시물, 해시태그를 통합 검색</li>
+                            </ul>
+
+                            <h6>🤝 팔로우 시스템</h6>
+                            <ul>
+                                <li>유저 간 팔로우/언팔로우 기능 구현</li>
+                                <li>팔로잉 / 팔로워 목록 제공</li>
+                            </ul>
+                        </div>
+                    </div>
                     <p><i class="fas fa-check"></i> 문제 해결 경험</p>
                     <div class="problem-box">
                         <div class="problem-section">
@@ -307,26 +318,29 @@
                             그 과정에서 Spring Security 인증 처리 방식에 대한 이해도 깊어졌습니다.
                         </div>
                     </div>
-
-                    <p> <i class="fas fa-cog"></i> 구현 환경</p>
-                    <ul>
-                        <li>IDE: 백엔드-Eclipse STS4, 프론트엔드-VSCode</li>
-                        <li>server: Spring Boot 3.4.4</li>
-                        <li>Data Base: MySQL 8.0.41</li>
-                        <li>DB 도구: MySQL Workbench 8.0</li>
-                        <li>개발 언어: Java 21, HTML/CSS, JavaScript</li>
-                        <li>협업 툴: github, slack</li>
-                        <li>적용 라이브러리</li>
-                        <ul>
-                            <li>Spring Web 3.4.4 </li>
-                            <li>Spring Data JPA 3.4.4 </li>
-                            <li>MySQL Driver </li>
-                            <li>Thymeleaf 3.1.2 </li>
-                            <li>Spring Boot DevTools (개발 편의성) </li>
-                            <li>Spring Security 3.2.4 </li>
-                            <li>Spring Validation 3.1.2 </li>
+                    <p><i class="fas fa-cog"></i> 구현 환경</p>
+                    <div class="problem-box">
+                        <ul class="env-list">
+                            <li><strong>IDE</strong>: 백엔드 - Eclipse STS4, 프론트엔드 - VSCode</li>
+                            <li><strong>Server</strong>: Spring Boot 3.4.4</li>
+                            <li><strong>Data Base</strong>: MySQL 8.0.41</li>
+                            <li><strong>DB 도구</strong>: MySQL Workbench 8.0</li>
+                            <li><strong>개발 언어</strong>: Java 21, HTML/CSS, JavaScript</li>
+                            <li><strong>협업 툴</strong>: GitHub, Slack</li>
+                            <li><strong>적용 라이브러리</strong>:
+                                <ul class="library-list">
+                                    <li>Spring Web 3.4.4</li>
+                                    <li>Spring Data JPA 3.4.4</li>
+                                    <li>MySQL Driver</li>
+                                    <li>Thymeleaf 3.1.2</li>
+                                    <li>Spring Boot DevTools</li>
+                                    <li>Spring Security 3.2.4</li>
+                                    <li>Spring Validation 3.1.2</li>
+                                </ul>
+                            </li>
                         </ul>
-                    </ul>
+                    </div>
+
                 </div>
             </div>
         </section>
